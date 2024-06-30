@@ -6,7 +6,7 @@ import WorldComponent from '../WorldComponent'
 const renderComponent = props => render(<WorldComponent {...props} />)
 
 // Test suite for WorldComponent
-describe('render WorldComponent', () => {
+describe('render World Component', () => {
   let props
 
   // Set up default props before each test
@@ -20,7 +20,7 @@ describe('render WorldComponent', () => {
   // Test if the component renders
   it('should render World Component', () => {
     const { getByTestId } = renderComponent(props)
-    expect(getByTestId('world-component')).toBeInTheDocument()
+    expect(getByTestId('worldComponent')).toBeInTheDocument()
   })
 
   // Test if the title and description are displayed correctly
