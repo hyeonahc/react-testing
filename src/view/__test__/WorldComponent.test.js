@@ -4,6 +4,8 @@ import WorldComponent from '../WorldComponent'
 
 // Helper function to render the component
 const renderComponent = props => render(<WorldComponent {...props} />)
+// Below code is the same as above
+// const renderComponent = ({ title, desc }) => render(<WorldComponent title={title} desc={desc} />)
 
 // Test suite for WorldComponent
 describe('render World Component', () => {
