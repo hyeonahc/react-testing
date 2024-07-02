@@ -1,7 +1,9 @@
 // 2. Component Testing
+import { render } from '@testing-library/react'
 import React from 'react'
-// import { render, screen } from '@testing-library/react';
 import HelloComponent from '../HelloComponent'
+
+const renderComponent = () => render(<HelloComponent />)
 
 // Method 1
 // describe('HelloComponent', () => {
@@ -29,7 +31,6 @@ describe('HelloComponent', () => {
 })
 
 // Method 3
-// const renderComponent = () => render(<HelloComponent />)
 // describe('HelloComponent', () => {
 //   it('should render the Hello Component', () => {
 //     const { getByTestId } = renderComponent()
