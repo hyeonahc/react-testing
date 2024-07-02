@@ -1,15 +1,16 @@
 import { render } from '@testing-library/react'
-import React from 'react'
+import { IWorldComponentProps } from '../../types/types'
 import WorldComponent from '../WorldComponent'
 
 // Helper function to render the component
-const renderComponent = props => render(<WorldComponent {...props} />)
+const renderComponent = (props: IWorldComponentProps) =>
+  render(<WorldComponent {...props} />)
 // Below code is the same as above
 // const renderComponent = ({ title, desc }) => render(<WorldComponent title={title} desc={desc} />)
 
 // Test suite for WorldComponent
 describe('render World Component', () => {
-  let props
+  let props: IWorldComponentProps
 
   // Set up default props before each test
   beforeEach(() => {

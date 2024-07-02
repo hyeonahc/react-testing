@@ -7,9 +7,9 @@ const renderComponent = () => render(<GreetingComponent />)
 describe('render GreetingComponent', () => {
   it('display the new message after button click', () => {
     const { getByTestId } = renderComponent()
-    expect(getByTestId('clickMeBtn')).toHaveTextContent("Here's a message")
+    expect(getByTestId('message')).toHaveTextContent("Here's a message")
     fireEvent.click(getByTestId('clickMeBtn'))
-    expect(getByTestId('clickMeBtn')).toHaveTextContent('Welcome')
+    expect(getByTestId('message')).toHaveTextContent('Welcome')
   })
 
   // it('should display the initial message', () => {

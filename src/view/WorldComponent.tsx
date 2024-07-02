@@ -1,6 +1,6 @@
-import React from 'react'
+import { IWorldComponentProps } from '../types/types'
 
-const WorldComponent = ({ title, desc }) => {
+const WorldComponent = ({ title, desc }: IWorldComponentProps) => {
   return (
     <div data-testid='worldComponent'>
       <div data-testid='title'>{title}</div>

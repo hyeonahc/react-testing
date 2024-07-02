@@ -1,5 +1,3 @@
-import React from 'react'
-
 const HelloComponent = () => {
   return (
     <div data-testid='HelloComponent'>

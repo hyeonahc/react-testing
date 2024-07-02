@@ -1,7 +1,7 @@
 import './App.css'
 import HelloComponent from './view/HelloComponent'
 
-function App() {
+const App = () => {
   return (
     <div className='App'>
       <HelloComponent />
